@@ -1,0 +1,345 @@
+/* =========================================
+common box sizing technique to eleminated default styles
+============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  perspective: inherit;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+p,
+label,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.home_container {
+  position: relative;
+  /* height: 65vh; */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+#home {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+#home img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+}
+.holder {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.home_header {
+  position: absolute;
+  top: 15%;
+}
+.home_header span {
+  color: #e25822;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.home_header h1 {
+  margin: 0;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.home_header h2 {
+  color: black;
+  -webkit-text-stroke: 1px white;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  font-size: 84px;
+  position: relative;
+  font-weight: 900;
+}
+
+#skills {
+  height: auto;
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+.skill_holder {
+  display: flex;
+  position: relative;
+}
+#skills h1,
+#works h1 {
+  color: #ddd;
+  letter-spacing: 11px;
+  text-transform: uppercase;
+  font-size: 40px;
+  /* position: relative; */
+  font-weight: 900;
+}
+
+.header_skill {
+  padding: 10px;
+}
+.skill_header,
+.work_header {
+  display: inline-block;
+  margin-bottom: 100px;
+}
+.skill_header a {
+  text-decoration: none;
+}
+
+.header_skill span,
+.work_header span {
+  color: #e25822;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.header_skill h1,
+.work_header h1 {
+  color: black;
+  -webkit-text-stroke: 1px white;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  font-size: 7em;
+  position: relative;
+  font-weight: 900;
+}
+
+.line {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background: white;
+  margin-bottom: 4px;
+  margin-right: 9px;
+}
+
+.buttn_holder {
+  display: inline-block;
+  position: relative;
+}
+.buttn_header {
+  border: 1px solid white;
+  padding: 5px 60px;
+  margin-top: 56px;
+  display: inline-block;
+  margin-right: 263px;
+}
+.buttn_header span {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+.arrow_down {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+.arrow_down span {
+  width: 36px;
+  height: 35px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  display: block;
+  transform: rotate(45deg);
+  margin: -26px;
+  animation: animateArrow 2s infinite;
+}
+.arrow_down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrow_down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes animateArrow {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-30px, -30px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(30px, 30px);
+  }
+}
+
+.skills_content_holder {
+  display: flex;
+  margin-bottom: 100px;
+  padding: 20px 0;
+}
+.skills_content_holder h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.skills_content_holder p {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 42px;
+  font-weight: 300;
+  padding-right: 25px;
+}
+
+.logo_holder {
+  width: 90px;
+  height: 85px;
+  display: inline-block;
+  margin: 10px 29px 0 0;
+}
+.logo_holder img {
+  width: 100%;
+  height: 100%;
+}
+.node{
+  width: 90px;
+    height: 75px;
+}
+
+.html img, .jquery img , .git img {
+  height: 76%;
+}
+
+
+
+.mysql img {
+  width: 53%;
+}
+.logo_section {
+  height: 70vh;
+  display: block;
+  position: relative;
+}
+
+.works_container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 50px;
+  justify-content: center;
+  perspective: 300px;
+}
+
+.work_content_holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.project_list{
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project_card{
+  height: 100%;
+  width: 30%;
+  background: linear-gradient( to right, rgb(51, 51, 51), rgb(255, 255, 255, 0.7) );
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+.project_card h5{
+  color: white;
+}
+
+.white_background {
+  background: white;
+  z-index: 1;
+  padding: 0;
+}
+
+.black_background {
+  background: black;
+  z-index: 2;
+  padding: 0;
+  border-top-right-radius: 50%;
+}
+
+.contact_holder {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 100px 100px;
+}
+.contact_holder h1 {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.contact_holder p,
+.contact_holder ul li {
+  color: white;
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.contact_holder span {
+  text-transform: none;
+  padding-left: 10px;
+  color: lightskyblue;
+  display: inline-block;
+  position: absolute;
+  right: 25%;
+  bottom: 50%;
+  font-size: 30px;
+}
+
+.contact_holder ul {
+  list-style: circle;
+  padding: 20px;
+}
+.contact_holder ul li {
+  padding: 2px 5px;
+}

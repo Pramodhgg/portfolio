@@ -1,0 +1,146 @@
+.works_content_holder {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.card_container,
+.card_container2,
+.card_container3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  padding: 100px;
+  position: relative;
+  height: 70vh;
+  margin-bottom: 20px;
+}
+
+.card_container2 {
+}
+
+.card,
+.card3,
+.card2 {
+  min-height: 40vh;
+  width: 90%;
+  z-index: 9999;
+  border-radius: 30px;
+  padding: 20px;
+  transform-style: preserve-3d;
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+.card {
+  box-shadow: 0 20px 20px rgb(255 255 0 / 20%),
+    0px 0px 50px rgb(255 255 0 / 20%);
+}
+.card2 {
+  box-shadow: 0 20px 20px rgb(189 17 17 / 20%),
+    0px 0px 50px rgb(189 17 17 / 20%);
+}
+.card3 {
+  box-shadow: 0 20px 20px rgb(17 135 189 / 20%),
+    0px 0px 50px rgb(17 135 189 / 20%);
+}
+.project,
+.project2,
+.project3 {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  margin-bottom: 75px;
+}
+.project img {
+  width: 8rem;
+  z-index: 2;
+  transition: all 1s ease-in-out;
+}
+.project2 img {
+  width: 14rem;
+  z-index: 2;
+  transition: all 1s ease-in-out;
+}
+.project3 img {
+  width: 14rem;
+  z-index: 2;
+  transition: all 1s ease-in-out;
+}
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 0, 0.7),
+    rgb(255, 255, 255, 0.7)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.circle2 {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(189, 17, 17),
+    rgb(255, 255, 255, 0.7)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.circle3 {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgb(17, 135, 189),
+    rgb(255, 255, 255, 0.7)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1,
+.info2 h1,
+.info3 h1 {
+  font-size: 2rem;
+  transition: all 1s ease-in-out;
+}
+
+.info h3,
+.info2 h3,
+.info3 h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: white;
+  font-weight: lighter;
+  transition: all 1s ease-in-out;
+}
+
+.card_information {
+  padding-top: 80px;
+}
+
+.card_information p {
+  color: white;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+h4 {
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.margin {
+  margin: 50px 0 100px 0;
+}

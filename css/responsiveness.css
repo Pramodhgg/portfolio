@@ -1,0 +1,189 @@
+/* large devices (Desktops and Laptops) */
+@media (min-width: 1200px) {
+}
+
+/* Medium devices (Landscape tablets & Medium Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home_header {
+    top: 18%;
+  }
+  .arrow_down {
+    bottom: 22%;
+  }
+  .buttn_holder {
+    bottom: 10%;
+  }
+  .home_header h2 {
+    font-size: 90px;
+    letter-spacing: 9px;
+  }
+  .contact_holder span{
+    bottom: 57px;
+    left: 90px;
+  }
+}
+/* customised elements for responsiveness */
+
+@media (min-width: 756px) and (max-width: 991px) {
+  .home_header {
+    top: 40%;
+  }
+  .home_container {
+    height: 60vh;
+  }
+  #home {
+    height: 60vh;
+  }
+  .buttn_header {
+    margin-right: 40px;
+  }
+  .buttn_holder {
+    bottom: -15%;
+  }
+  .home_header h2 {
+    font-size: 75px;
+    letter-spacing: 7px;
+  }
+  .holder {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  .header_skill {
+    padding: 12px;
+  }
+
+  #skills h1,
+  #works h1 {
+    font-size: 27px;
+    font-weight: 800;
+  }
+  .skill_header,
+  .work_header {
+    margin-bottom: 0;
+  }
+
+  .card_information {
+    padding-top: 20px;
+  }
+  .margin {
+    margin: 50px 0 200px 0;
+}
+.contact_holder span{
+  bottom: 57px;
+  left: 90px;
+}
+.card_information{
+  padding: 0;
+}
+}
+
+@media (min-width: 627px) and (max-width: 755px) {
+  .home_header {
+    top: 30%;
+  }
+  .home_container {
+    height: 45vh;
+  }
+  #home {
+    height: 60vh;
+  }
+  .buttn_header {
+    margin-right: 40px;
+  }
+  .buttn_holder {
+    bottom: -18%;
+  }
+  .home_header h2 {
+    font-size: 60px;
+    letter-spacing: 7px;
+  }
+  .home_header h1 {
+    font-size: 45px;
+  }
+
+  .header_skill {
+    padding: 12px;
+  }
+
+  #skills h1,
+  #works h1 {
+    font-size: 27px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .skill_header,
+  .work_header {
+    margin-bottom: 0;
+  }
+  .margin {
+    margin: 50px 0 200px 0;
+}
+.contact_holder span{
+  bottom: 57px;
+  left: 90px;
+}
+.card_information{
+  padding: 0;
+}
+}
+
+@media (max-width: 626px) {
+  .home_header {
+    top: 30%;
+  }
+  .home_container {
+    height: 45vh;
+  }
+  #home {
+    height: 60vh;
+  }
+  .buttn_header {
+    margin-right: 30px;
+    padding: 5px 30px;
+  }
+
+  .home_header h2 {
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
+  .home_header h1 {
+    font-size: 35px;
+  }
+
+  .header_skill {
+    padding: 12px;
+  }
+
+  #skills h1,
+  #works h1 {
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .skill_header,
+  .work_header {
+    margin-bottom: 0;
+  }
+  .margin {
+    margin: 50px 0 250px 0;
+}
+.contact_holder{
+  padding: 100px 0 100px 60px;
+}
+.contact_holder span{
+  bottom: 57px;
+  left: 35px;
+}
+.card_information{
+  padding: 0;
+}
+}
+
+/* customised elements for responsiveness */
+@media (max-width: 1100px) {
+  #home img {
+    top: -7%;
+  }
+}
