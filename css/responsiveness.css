@@ -17,7 +17,7 @@
     font-size: 90px;
     letter-spacing: 9px;
   }
-  .contact_holder span{
+  .contact_holder span {
     bottom: 57px;
     left: 90px;
   }
@@ -69,14 +69,14 @@
   }
   .margin {
     margin: 50px 0 200px 0;
-}
-.contact_holder span{
-  bottom: 57px;
-  left: 90px;
-}
-.card_information{
-  padding: 0;
-}
+  }
+  .contact_holder span {
+    bottom: 57px;
+    left: 90px;
+  }
+  .card_information {
+    padding: 0;
+  }
 }
 
 @media (min-width: 627px) and (max-width: 755px) {
@@ -84,10 +84,10 @@
     top: 30%;
   }
   .home_container {
-    height: 45vh;
+    height: 100vh;
   }
   #home {
-    height: 60vh;
+    height: 90vh;
   }
   .buttn_header {
     margin-right: 40px;
@@ -119,14 +119,14 @@
   }
   .margin {
     margin: 50px 0 200px 0;
-}
-.contact_holder span{
-  bottom: 57px;
-  left: 90px;
-}
-.card_information{
-  padding: 0;
-}
+  }
+  .contact_holder span {
+    bottom: 57px;
+    left: 90px;
+  }
+  .card_information {
+    padding: 0;
+  }
 }
 
 @media (max-width: 626px) {
@@ -134,10 +134,10 @@
     top: 30%;
   }
   .home_container {
-    height: 45vh;
+    height: 100vh;
   }
   #home {
-    height: 60vh;
+    height: 90vh;
   }
   .buttn_header {
     margin-right: 30px;
@@ -168,17 +168,17 @@
   }
   .margin {
     margin: 50px 0 250px 0;
-}
-.contact_holder{
-  padding: 100px 0 100px 60px;
-}
-.contact_holder span{
-  bottom: 57px;
-  left: 35px;
-}
-.card_information{
-  padding: 0;
-}
+  }
+  .contact_holder {
+    padding: 100px 0 100px 60px;
+  }
+  .contact_holder span {
+    bottom: 57px;
+    left: 35px;
+  }
+  .card_information {
+    padding: 0;
+  }
 }
 
 /* customised elements for responsiveness */
