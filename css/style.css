@@ -44,11 +44,10 @@ label {
   flex-direction: column;
   margin-bottom: 50px;
 }
-#home img {
+.home_container_img {
   width: 100%;
   height: auto;
   position: absolute;
-  top: -100px;
   z-index: -1;
 }
 .holder {
