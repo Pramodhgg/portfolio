@@ -19,7 +19,7 @@ function myFunction(x) {
     yValue = 75;
     xvalue = 15;
     yVangular = 0;
-    xVangular =0;
+    xVangular = 0;
   }
 }
 var x = window.matchMedia("(max-width: 991px)");
@@ -29,30 +29,35 @@ x.addListener(myFunction); // Attach listener function on state changes
 container.addEventListener("mousemove", (e) => {
   let xAxis = (window.innerWidth / 2 - e.pageX) / 25 - xvalue;
   let yAxis = (window.innerHeight / 2 - e.pageY) / 25 + yValue;
-
-  card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  if (!x.matches) {
+    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  }
 });
 
 //Animate In
 container.addEventListener("mouseenter", (e) => {
-  card.style.transition = "none";
+  if (!x.matches) {
+    card.style.transition = "none";
 
-  //Popout
-  title.style.transform = "translateZ(100px)";
-  project.style.transform = "translateZ(100px)";
-  description.style.transform = "translateZ(100px)";
+    //Popout
+    title.style.transform = "translateZ(100px)";
+    project.style.transform = "translateZ(100px)";
+    description.style.transform = "translateZ(100px)";
+  }
 });
 //Animate Out
 container.addEventListener("mouseleave", (e) => {
-  card.style.transition = "all 1s ease";
-  title.style.transition = "all 1s ease";
-  project.style.transition = "all 1s ease";
-  description.style.transition = "all 1s ease";
-  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-  //Popback
-  title.style.transform = "translateZ(0px)";
-  project.style.transform = "translateZ(0px) rotateZ(0deg)";
-  description.style.transform = "translateZ(0px)";
+  if (!x.matches) {
+    card.style.transition = "all 1s ease";
+    title.style.transition = "all 1s ease";
+    project.style.transition = "all 1s ease";
+    description.style.transition = "all 1s ease";
+    card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    //Popback
+    title.style.transform = "translateZ(0px)";
+    project.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description.style.transform = "translateZ(0px)";
+  }
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -64,32 +69,42 @@ const project2 = document.querySelector(".project2 img");
 const description2 = document.querySelector(".info2 h3");
 
 container2.addEventListener("mousemove", (e) => {
-  console.log(description);
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 25 + xvalue - 30 + yVangular - xVangular;
+  let xAxis =
+    (window.innerWidth / 2 - e.pageX) / 25 +
+    xvalue -
+    30 +
+    yVangular -
+    xVangular;
   let yAxis = (window.innerHeight / 2 - e.pageY) / 25 + yValue + 25 + yVangular;
-  card2.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  if (!x.matches) {
+    card2.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  }
 });
 
 //Animate In
 container2.addEventListener("mouseenter", (e) => {
-  card2.style.transition = "none";
+  if (!x.matches) {
+    card2.style.transition = "none";
 
-  //Popout
-  title2.style.transform = "translateZ(100px)";
-  project2.style.transform = "translateZ(100px)";
-  description2.style.transform = "translateZ(100px)";
+    //Popout
+    title2.style.transform = "translateZ(100px)";
+    project2.style.transform = "translateZ(100px)";
+    description2.style.transform = "translateZ(100px)";
+  }
 });
 //Animate Out
 container2.addEventListener("mouseleave", (e) => {
-  card2.style.transition = "all 1s ease";
-  title2.style.transition = "all 1s ease";
-  project2.style.transition = "all 1s ease";
-  description2.style.transition = "all 1s ease";
-  card2.style.transform = `rotateY(0deg) rotateX(0deg)`;
-  //Popback
-  title2.style.transform = "translateZ(0px)";
-  project2.style.transform = "translateZ(0px) rotateZ(0deg)";
-  description2.style.transform = "translateZ(0px)";
+  if (!x.matches) {
+    card2.style.transition = "all 1s ease";
+    title2.style.transition = "all 1s ease";
+    project2.style.transition = "all 1s ease";
+    description2.style.transition = "all 1s ease";
+    card2.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    //Popback
+    title2.style.transform = "translateZ(0px)";
+    project2.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description2.style.transform = "translateZ(0px)";
+  }
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -101,32 +116,38 @@ const project3 = document.querySelector(".project3 img");
 const description3 = document.querySelector(".info3 h3");
 
 container3.addEventListener("mousemove", (e) => {
-  console.log(description);
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 25 - xvalue;
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 25 + yValue + 50 + yVangular;
-  card3.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  if (!x.matches) {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 25 - xvalue;
+    let yAxis =
+      (window.innerHeight / 2 - e.pageY) / 25 + yValue + 50 + yVangular;
+    card3.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  }
 });
 
 //Animate In
 container3.addEventListener("mouseenter", (e) => {
-  card3.style.transition = "none";
+  if (!x.matches) {
+    card3.style.transition = "none";
 
-  //Popout
-  title3.style.transform = "translateZ(100px)";
-  project3.style.transform = "translateZ(100px)";
-  description3.style.transform = "translateZ(100px)";
+    //Popout
+    title3.style.transform = "translateZ(100px)";
+    project3.style.transform = "translateZ(100px)";
+    description3.style.transform = "translateZ(100px)";
+  }
 });
 //Animate Out
 container3.addEventListener("mouseleave", (e) => {
-  card3.style.transition = "all 1s ease";
-  title3.style.transition = "all 1s ease";
-  project3.style.transition = "all 1s ease";
-  description3.style.transition = "all 1s ease";
-  card3.style.transform = `rotateY(0deg) rotateX(0deg)`;
-  //Popback
-  title3.style.transform = "translateZ(0px)";
-  project3.style.transform = "translateZ(0px) rotateZ(0deg)";
-  description3.style.transform = "translateZ(0px)";
+  if (!x.matches) {
+    card3.style.transition = "all 1s ease";
+    title3.style.transition = "all 1s ease";
+    project3.style.transition = "all 1s ease";
+    description3.style.transition = "all 1s ease";
+    card3.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    //Popback
+    title3.style.transform = "translateZ(0px)";
+    project3.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description3.style.transform = "translateZ(0px)";
+  }
 });
 
 ////////////////////////////////////////////////////////////////////////

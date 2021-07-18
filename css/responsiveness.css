@@ -129,7 +129,7 @@
   }
 }
 
-@media (max-width: 626px) {
+@media (min-width: 458px) and (max-width: 626px) {
   .home_header {
     top: 30%;
   }
@@ -143,6 +143,12 @@
     margin-right: 30px;
     padding: 5px 30px;
   }
+  .arrow_down {
+    position: absolute;
+    right: 50%;
+    bottom: -75%;
+    /* top: 105%; */
+  }
 
   .home_header h2 {
     font-size: 45px;
@@ -154,6 +160,12 @@
 
   .header_skill {
     padding: 12px;
+  }
+  .logo_holder {
+    width: 90px;
+    height: 85px;
+    display: inline-block;
+    margin: 16px 2px 0 0;
   }
 
   #skills h1,
@@ -174,10 +186,115 @@
   }
   .contact_holder span {
     bottom: 57px;
-    left: 35px;
+    left: 10px;
   }
   .card_information {
     padding: 0;
+  }
+}
+
+@media (max-width: 457px) {
+  .home_header span,
+  .work_header span {
+    font-size: 12px;
+  }
+  .header_skill span {
+    font-size: 10px;
+  }
+  .home_header {
+    top: 30%;
+  }
+  .home_header h1 {
+    font-size: 25px;
+  }
+  .home_container {
+    height: 100vh;
+  }
+  #home {
+    height: 90vh;
+  }
+  .buttn_header {
+    margin-right: 28px;
+    padding: 2px 19px;
+  }
+  .buttn_header span {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .arrow_down {
+    position: absolute;
+    right: 45%;
+    bottom: -35%;
+  }
+  .arrow_down span {
+    width: 33px;
+    height: 33px;
+  }
+  .home_header h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .header_skill {
+    padding: 12px;
+  }
+  .logo_holder {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin: 16px 3px 0 0;
+  }
+
+  #skills h1,
+  #works h1 {
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-top: 0;
+  }
+  .skills_content_holder h2 {
+    font-size: 16px;
+  }
+  .skills_content_holder p {
+    font-size: 12px;
+  }
+  .skill_header,
+  .work_header {
+    margin-bottom: 0;
+  }
+  .margin {
+    margin: 50px 0 250px 0;
+  }
+  .contact_holder {
+    padding: 100px 0 100px 60px;
+  }
+  .contact_holder span {
+    bottom: 57px;
+    left: 10px;
+  }
+  .card_information {
+    padding: 10px;
+  }
+  .card_information p,
+  .contact_holder p,
+  .contact_holder ul li {
+    color: white;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 12px;
+    /* margin-top: 
+    20px; */
+  }
+  .contact_holder h1 {
+    font-size: 25px;
+  }
+  .contact_holder span {
+    bottom: 57px;
+    left: 51px;
+    font-size: 12px;
   }
 }
 
