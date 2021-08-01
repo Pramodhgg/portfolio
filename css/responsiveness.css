@@ -108,17 +108,17 @@
   .project_summary {
     position: absolute;
     align-items: flex-start;
-    height: 60%;
+    height: auto;
     justify-content: flex-end;
     padding: 21px 10px;
     gap: 25px;
     bottom: 0;
     background-image: linear-gradient(
       to right,
-      rgba(2, 0, 36, 0.32) 0%,
-      rgba(2, 0, 36, 1) calc(100% - 530px),
-      rgba(2, 0, 36, 1) calc(100% - 530px),
-      rgba(2, 0, 36, 1) 100%
+      rgba(17, 11, 114, 0.9) 0%,
+      rgba(17, 11, 114, 0.9) calc(100% - 530px),
+      rgba(17, 11, 114, 0.9) calc(100% - 530px),
+      rgba(17, 11, 114, 0.9) 100%
     );
   }
 }
@@ -169,17 +169,17 @@
   .project_summary {
     position: absolute;
     align-items: flex-start;
-    height: 60%;
+    height: auto;
     justify-content: flex-end;
     padding: 21px 10px;
     gap: 25px;
     bottom: 0;
     background-image: linear-gradient(
       to right,
-      rgba(2, 0, 36, 0.32) 0%,
-      rgba(2, 0, 36, 1) calc(100% - 530px),
-      rgba(2, 0, 36, 1) calc(100% - 530px),
-      rgba(2, 0, 36, 1) 100%
+      rgba(17, 11, 114, 0.9) 0%,
+      rgba(17, 11, 114, 0.9) calc(100% - 530px),
+      rgba(17, 11, 114, 0.9) calc(100% - 530px),
+      rgba(17, 11, 114, 0.9) 100%
     );
   }
 
@@ -201,7 +201,7 @@
     flex-direction: column;
     gap: 10px;
     position: relative;
-    width: 140%;
+    width: 126%;
     left: -138px;
   }
   .comp_effort p {
@@ -264,17 +264,17 @@
   .project_summary {
     position: absolute;
     align-items: flex-start;
-    height: 60%;
+    height: auto;
     justify-content: flex-end;
     padding: 21px 10px;
     gap: 25px;
     bottom: 0;
     background-image: linear-gradient(
       to right,
-      rgba(2, 0, 36, 0.32) 0%,
-      rgba(2, 0, 36, 1) calc(100% - 530px),
-      rgba(2, 0, 36, 1) calc(100% - 530px),
-      rgba(2, 0, 36, 1) 100%
+      rgba(17, 11, 114, 0.9) 0%,
+      rgba(17, 11, 114, 0.9) calc(100% - 530px),
+      rgba(17, 11, 114, 0.9) calc(100% - 530px),
+      rgba(17, 11, 114, 0.9) 100%
     );
   }
 
@@ -289,7 +289,7 @@
   }
   .comp_brief p,
   .comp_brief p span {
-    font-size: 16px;
+    font-size: 15px;
   }
   .comp_effort {
     display: flex;
@@ -318,6 +318,26 @@
     gap: 20px;
     font-size: 26px;
   }
+  .about_content ul li p {
+    font-size: 12px;
+  }
+  .about_content ul {
+    padding: 5px 15px;
+  }
+  .about_content {
+    gap: 10px;
+  }
+  .about_content {
+    gap: 10px;
+  }
+  .comp_effort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 120%;
+    left: -90px;
+  }
 }
 
 /* customised elements for responsiveness */
@@ -345,17 +365,17 @@
   .project_summary {
     position: absolute;
     align-items: flex-start;
-    height: 50%;
+    height: auto;
     justify-content: flex-end;
     padding: 21px 10px;
     gap: 25px;
     bottom: 0;
     background-image: linear-gradient(
       to right,
-      rgba(2, 0, 36, 0.32) 0%,
-      rgba(2, 0, 36, 1) calc(100% - 530px),
-      rgba(2, 0, 36, 1) calc(100% - 530px),
-      rgba(2, 0, 36, 1) 100%
+      rgba(17, 11, 114, 0.9) 0%,
+      rgba(17, 11, 114, 0.9) calc(100% - 530px),
+      rgba(17, 11, 114, 0.9) calc(100% - 530px),
+      rgba(17, 11, 114, 0.9) 100%
     );
   }
   .summary_header {
@@ -364,5 +384,53 @@
     align-items: baseline;
     gap: 5px;
     margin-top: 30px;
+  }
+  .about_content ul li p {
+    font-size: 12px;
+  }
+  .about_content ul {
+    padding: 5px 15px;
+  }
+  .about_content {
+    gap: 10px;
+  }
+  .about_content {
+    gap: 10px;
+  }
+  .comp_effort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 134%;
+    left: -90px;
+  }
+}
+
+@media (max-width: 404px) {
+  .project_header h1 span,
+  .about_header h1 span,
+  .contact_header h1 span,
+  .project_header h1,
+  .about_header h1,
+  .contact_header h1 {
+    font-size: 17px;
+  }
+  .about_content ul li p {
+    font-size: 12px;
+  }
+  .about_content ul {
+    padding: 5px 15px;
+  }
+  .about_content {
+    gap: 10px;
+  }
+  .comp_effort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 147%;
+    left: -90px;
   }
 }
