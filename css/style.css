@@ -301,6 +301,12 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
+.gif {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
 .project_summary h2 {
   margin-top: 3px;
   margin-bottom: 2px;
@@ -449,7 +455,9 @@ a {
 .footer_content p {
   padding: 0;
   margin: 0;
+  font-size: 10px;
 }
 .footer_content p a {
   color: #64ffda;
+  font-size: 10px;
 }
