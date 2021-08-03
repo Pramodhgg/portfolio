@@ -538,9 +538,12 @@ a {
   list-style: none;
   width: 25px;
   height: 25px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(40, 30, 231, 0.7);
   animation: animate 10s linear infinite;
   bottom: -150px;
+  opacity: 0.2;
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
 }
 .box-area li:nth-child(1) {
   left: 86%;
@@ -583,9 +586,9 @@ a {
 }
 
 .box-area li:nth-child(7) {
-  left: 15%;
-  width: 110px;
-  height: 110px;
+  right: 25%;
+  width: 10px;
+  height: 10px;
   animation-delay: 0s;
   top: 20%;
 }
@@ -608,7 +611,7 @@ a {
   height: 40px;
   animation-delay: 0s;
   top: 18%;
-  right: 40%;
+  right: 20%;
 }
 .box-area li:nth-child(11) {
   width: 40px;
@@ -634,11 +637,29 @@ a {
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
-    opacity: 1;
+    opacity: 0;
+    background: rgba(40, 30, 231, 0.9);
   }
+  25% {
+    transform: translateY(-200px) rotate(45deg);
+    opacity: 0.5;
+    background: rgba(40, 30, 231, 0.3);
+  }
+  50% {
+    transform: translateY(-400px) rotate(90deg);
+    opacity: 1;
+    background: rgba(40, 30, 231, 0.1);
+  }
+  75% {
+    transform: translateY(-600px) rotate(180deg);
+    opacity: 0.5;
+    background: rgba(40, 30, 231, 0.3);
+  }
+
   100% {
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
+    background: rgba(40, 30, 231, 0.9);
   }
 }
 
