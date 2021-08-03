@@ -642,7 +642,6 @@ a {
   }
   25% {
     transform: translateY(-200px) rotate(45deg);
-    opacity: 0.5;
     background: rgba(40, 30, 231, 0.3);
   }
   50% {
@@ -652,7 +651,6 @@ a {
   }
   75% {
     transform: translateY(-600px) rotate(180deg);
-    opacity: 0.5;
     background: rgba(40, 30, 231, 0.3);
   }
 
