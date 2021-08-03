@@ -185,6 +185,7 @@ a {
 }
 .home_header_content {
   overflow: hidden;
+  z-index: 9999;
 }
 .home_header_content p {
   margin: 0px 0px 30px 4px;
@@ -224,6 +225,7 @@ a {
   gap: 28px;
   font-size: 30px;
   font-weight: 600;
+  z-index: 10;
 }
 .project_header h1 span,
 .about_header h1 span,
@@ -376,11 +378,15 @@ a {
   letter-spacing: 1px;
   font-weight: 600;
 }
+.comp_list {
+  z-index: 10;
+}
 .comp_brief {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+  z-index: 10;
 }
 .comp_brief p {
   font-size: 18px;
@@ -396,6 +402,7 @@ a {
   display: flex;
   height: 45px;
   align-items: center;
+  z-index: 10;
 }
 .carret .carret_icon {
   font-size: 50px;
@@ -405,6 +412,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 10;
 }
 .comp_effort p {
   font-size: 16px;
@@ -415,11 +423,13 @@ a {
   flex-direction: row;
   gap: 20px;
   align-items: center;
+  z-index: 10;
 }
 
 .comp_effort .effort i {
   font-size: 16px;
   color: rgb(21, 16, 124);
+  z-index: 10;
 }
 
 .contact_section {
@@ -438,9 +448,11 @@ a {
   justify-content: space-between;
 
   margin-top: 80px;
+  z-index: 10;
 }
 .contact_info {
   width: 70%;
+  z-index: 10;
 }
 .contact_info p {
   font-size: 20px;
@@ -531,6 +543,7 @@ a {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 1;
 }
 .box-area li {
   position: absolute;
@@ -538,12 +551,22 @@ a {
   list-style: none;
   width: 25px;
   height: 25px;
-  background: rgba(40, 30, 231, 0.7);
+
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
+
+  background-image: radial-gradient(
+    circle,
+    #110c76,
+    #120e92,
+    #1210af,
+    #1211cd,
+    #1212eb
+  );
   animation: animate 10s linear infinite;
   bottom: -150px;
   opacity: 0.2;
-  /* in order: x offset, y offset, blur size, spread size, color */
-  /* blur size and spread size are optional (they default to 0) */
+  z-index: -2;
 }
 .box-area li:nth-child(1) {
   left: 86%;
@@ -638,29 +661,27 @@ a {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 0;
-    background: rgba(40, 30, 231, 0.9);
   }
   25% {
     transform: translateY(-200px) rotate(45deg);
-    background: rgba(40, 30, 231, 0.3);
+    opacity: 0.5;
   }
   50% {
     transform: translateY(-400px) rotate(90deg);
     opacity: 1;
-    background: rgba(40, 30, 231, 0.1);
   }
   75% {
     transform: translateY(-600px) rotate(180deg);
-    background: rgba(40, 30, 231, 0.3);
+    opacity: 0.5;
   }
 
   100% {
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
-    background: rgba(40, 30, 231, 0.9);
   }
 }
 
 .header_section {
   position: relative;
+  z-index: 2;
 }
