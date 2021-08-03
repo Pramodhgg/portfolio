@@ -586,20 +586,20 @@ a {
   left: 15%;
   width: 110px;
   height: 110px;
-  animation-delay: 3.5s;
+  animation-delay: 0s;
   top: 20%;
 }
 .box-area li:nth-child(8) {
   width: 110px;
   height: 110px;
-  animation-delay: 3.5s;
+  animation-delay: 0s;
   top: 18%;
   right: 10%;
 }
 .box-area li:nth-child(9) {
   width: 110px;
   height: 110px;
-  animation-delay: 3.5s;
+  animation-delay: 0s;
   top: 25%;
   right: 40%;
 }
@@ -627,7 +627,7 @@ a {
 .box-area li:nth-child(13) {
   width: 90px;
   height: 90px;
-  animation-delay: 3.5s;
+  animation-delay: 0s;
   top: 30%;
   right: 20%;
 }
