@@ -1,3 +1,7 @@
+let about = document.querySelector("#about");
+let project = document.querySelector("#project");
+let contact = document.querySelector("#contact");
+
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 tl.to(".text", { x: "0%", opacity: "1", duration: 1, stagger: 0.25 });
@@ -18,3 +22,36 @@ tl.fromTo(
   "-=6.5"
 );
 
+document.querySelector(".about").removeAttribute("id", "active");
+document.querySelector(".project").removeAttribute("id", "active");
+document.querySelector(".contact").removeAttribute("id", "active");
+window.onload = (event) => {
+  console.log("reloaded");
+  window.scrollTo(0, 0);
+  document.querySelector(".about").removeAttribute("id", "active");
+  document.querySelector(".project").removeAttribute("id", "active");
+  document.querySelector(".contact").removeAttribute("id", "active");
+};
+window.addEventListener("scroll", () => {
+  let windows = window.pageYOffset;
+
+  if (about.offsetTop <= windows && project.offsetTop > windows) {
+    document.querySelector(".about").setAttribute("id", "active");
+
+    document.querySelector(".project").removeAttribute("id", "active");
+    document.querySelector(".contact").removeAttribute("id", "active");
+  } else if (project.offsetTop <= windows && contact.offsetTop > windows) {
+    document.querySelector(".project").setAttribute("id", "active");
+    document.querySelector(".about").removeAttribute("id", "active");
+    document.querySelector(".contact").removeAttribute("id", "active");
+  } else if (contact.offsetTop <= windows) {
+    console.log("iam in contact fcckkk !");
+    document.querySelector(".contact").setAttribute("id", "active");
+    document.querySelector(".about").removeAttribute("id", "active");
+    document.querySelector(".project").removeAttribute("id", "active");
+  } else {
+    document.querySelector(".contact").removeAttribute("id", "active");
+    document.querySelector(".about").removeAttribute("id", "active");
+    document.querySelector(".project").removeAttribute("id", "active");
+  }
+});
