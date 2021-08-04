@@ -52,10 +52,10 @@ a {
   font-size: 12px;
 }
 .padding {
-  padding: 60px 150px;
+  padding: 60px 20px 60px 150px;
 }
 .padding_w_bottom {
-  padding: 60px 150px;
+  padding: 60px 20px 60px 150px;
 }
 .padding_wo_bottom {
   padding: 70px 100px 0px 70px;
@@ -687,7 +687,7 @@ a {
 .image_card_odd,
 .image_card_even {
   height: 35vh;
-  width: 75vh;
+  width: 100%;
   position: relative;
 }
 .image_overlay {
@@ -736,7 +736,6 @@ a {
   display: flex;
   flex-direction: column;
 
-  position: absolute;
   z-index: 10;
 }
 .one {
@@ -763,10 +762,24 @@ a {
   /* align-items: center; */
   gap: 100px;
   justify-content: space-between;
-  height: 170vh;
   width: 100%;
   position: relative;
   z-index: 99;
+}
+.project_container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.project_left,
+.project_right {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.project_right {
+  margin-top: 200px;
 }
 .content {
   display: flex;
@@ -792,8 +805,9 @@ a {
   display: flex;
   align-items: center;
 }
+
 .content_text p {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 0.9;
 }
@@ -808,4 +822,8 @@ a {
 }
 .circle span {
   display: inline-block;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
