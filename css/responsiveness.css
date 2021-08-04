@@ -220,6 +220,16 @@
 }
 
 @media (max-width: 597px) {
+  .project_container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project_right {
+    margin-top: 0px;
+  }
   .nav_bar {
     display: none;
   }
