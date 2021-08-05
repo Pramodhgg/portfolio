@@ -786,7 +786,6 @@ a {
   justify-content: space-between;
   padding: 0;
   flex-wrap: wrap;
-  gap: 60px;
 }
 
 .content_desc {
